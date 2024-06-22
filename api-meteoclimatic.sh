@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Creado por Jose A. García-Tenorio en Mayo de 2024
+# Creado por Jose A. García-Tenorio (jantoni) en Mayo de 2024
 
 
 # Debes indicar 3 datos.
