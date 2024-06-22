@@ -10,7 +10,7 @@
 # datafile define el fichero donde este script debe encontrar los datos a enviar a Meteoclimatic. Debes indicar la ruta y el nombre del fichero
 
 
-# Variables a definir
+# Variables a definir. Respeta las comillas
 api_key = "TU-ID-API-DE-METEOCLIMATIC"
 station_code = "CODIGO DE ESTACION"
 datafile = "/PATH/FICHERO DE LA PLANTILLA DE METEOCLIMATIC"
