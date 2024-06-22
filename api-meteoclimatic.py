@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# Creado por José A. García-Tenorio en Mayo de 2024. Con la inestimable ayuda de la IA de Google Gemini
+# Creado por José A. García-Tenorio (jantoni) en Mayo de 2024
 
 # Este Script envía los datos de tu estación a Meteoclimatic.
 # Para ello necesitas definir 3 variables
