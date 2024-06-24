@@ -1,0 +1,23 @@
+## Esta plantilla genera un informe adaptado al formato Dayfile.txt de Cumulus para posteriormente subir datos de forma masiva a Meteoclimatic
+## La estructura es la de la base de datos de Meteoclimatic
+## Día, temperatura máxima, temperatura mínima, humedad máxima, humedad mínima,
+## presión máxima, presión mínima, viento racha máxima, precipitación del día.
+## Todos los demás campos adicionales van en blanco, aunque el usuario podrá editar el fichero a conveniencia.
+## Creado por José Antonio García-Tenorio (jantoni). Adaptado desde el informa NOAA original de Tom Keffer
+#encoding UTF-8
+#errorCatcher Echo
+#set $dia="%d/%m/%Y"
+#set $NODAY=" N/A"
+#set $NONE="   N/A"
+#if $unit.unit_type_dict.group_rain == "mm"
+#set $Rain="%.1f"
+#else
+#set $Rain="%.1f"
+#end if
+#for $day in $month.days
+#if $day.outTemp.count.raw or $day.rain.count.raw or $day.wind.count.raw
+$day.dateTime.format($dia, add_label=False),$day.wind.max.round(1).raw,0,00:00,$day.outTemp.min.round(1).raw,00:00,$day.outTemp.max.round(1).raw,00:00,$day.barometer.min.round(1).raw,00:00,$day.barometer.max.round(1).raw,00:00,0,00:00,$day.rain.sum.round(1).raw,0,0,0,00:00,$day.outHumidity.min.round(0).raw,00:00,$day.outHumidity.max.round(0).raw,00:00,0,0,0,00:00,0,00:00,0,00:00,0,00:00,0,00:00,0,00:00,0,00:00,0,0,0,0,00:00,0,00:00,0,00:00,0,00:00,0,00:00,0,0,00:00
+#else
+$day.dateTime.format($dia)
+#end if
+#end for
