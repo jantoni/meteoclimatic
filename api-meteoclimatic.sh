@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Creado por José A. García-Tenorio (jantoni) en Abril de 2026
+
+# Este Script envía los datos de tu estación a Meteoclimatic utilizando la versión 3 de su API.
+# Para ello necesitas definir 2 variables
+# api_key define el ID API (o API Key) del usuario, no de la estación. Lo puedes encontrar en la sección "Perfil" de Meteoclimatic una vez identificado
+# datafile define el fichero donde este script debe encontrar los datos a enviar a Meteoclimatic. Debes indicar la ruta y el nombre del fichero
+
+
 ### VARIABLES ###
 API_KEY="TU_API_KEY"
 DATAFILE="PATH_Y_NOMBRE_FICHERO_DATOS"
