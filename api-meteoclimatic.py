@@ -13,7 +13,7 @@
 # 
 # Para que envíe datos regularmente deberás añadir una línea al fichero /etc/crontab (o al fichero de cron que elijas)
 # Recomendamos enviar datos cada 5 minutos, por lo que la línea de /etc/crontab quedaría así:
-# */5 * * * * root sleep 50 && bash /etc/weewx/api-meteoclimatic.sh
+# */5 * * * * root sleep 50 && bash /etc/weewx/api-meteoclimatic.py
 # Explicación: Ejecuta cada 5 minutos el comando sleep 50, lo que provoca un retraso de 50 segundos para que la generación del fichero
 # con los datos sea finalizado por tu software. A continuación de los 50 segundos ejecuta el script.
 
