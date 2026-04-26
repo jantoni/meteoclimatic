@@ -1,7 +1,7 @@
 @echo off
 
 
-REM Este script envía los datos meteorológicos de una estación a Meteoclimatic y utiliza la API V3 de Meteoclimatic-Alba
+REM Este script envía los datos meteorológicos de una estación meteorológica a Meteoclimatic y utiliza la API V3 de Meteoclimatic-Alba
 REM 
 REM El script está preparado para buscar el fichero meteoclimatic.htm en el mismo directorio donde se encuentre ubicado el Script.
 REM 
